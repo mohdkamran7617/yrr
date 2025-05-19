@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!--COLOR SWITCHER-->
+    <div id="switcher-parent">
+        <div class="part1"><i class="ri-settings-5-line add"></i>
+            <p class="add">SELECT A COLOR</p>
+        </div>
+        <div class="part2">
+            <div class="colors-parent">
+                <div class="color1 colors" id="colors" data-color="#2f4f5f"></div>
+                <div class="color2 colors" id="colors" data-color="#333333"></div>
+                <div class="color3 colors" id="colors" data-color="#001f3f"></div>
+                <div class="color4 colors" id="colors" data-color="#004d40"></div>
+            </div>
+            <div class="btn-div">
+                <button>RESET</button>
+            </div>
+
+        </div>
+    </div>
+    <!--Slider effect-->
+    <div class="home-slider">
+        <div class="words">
+            <span>"Think. </span><span>Design.</span><span>Develop.</span><span> Deliver."</span>
+        </div>
+        <p>"Hello, I'm the mind behind this interface — <h>KAMRAN</h>."</p>
+    </div>
+    <!--NAVBAR START HERE-->
+    <nav class="navbar">
+        <div class="logo add">Kamran</div>
+        <ul class="nav-list">
+            <div class="nav-blur-bg"></div> <!-- Blur effect yahan hoga -->
+            <li class="home"><a href="#home" class="add">HOME<span class="line add-bg"></span></a></li>
+            <li><a href="#service" class="add">SERVICE<span class="line add-bg"></span></a></li>
+            <li><a href="#skill" class="add">SKILLS<span class="line add-bg"></span></a></li>
+            <li><a href="#work" class="add">WORK<span class="line add-bg"></span></a></li>
+            <li><a href="#contact" class="add">CONTACT<span class="line add-bg"></span></a></li>
+            <li>
+                <button class="animated-button">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                        </path>
+                    </svg>
+                    <span class="text add">DOWNLOAD CV </span>
+                    <span class="circle add-bg"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                        </path>
+                    </svg>
+                </button>
+            </li>
+            <div class="text1">
+                <p class="diaz">My Name is <span>"Kamran"</span></p>
+                <p class="web-designer">I'M A WEB-DESIGNER</p>
+            </div>
+            <img class="seprate" src="assets/separatorWhite 2.png" alt="">
+            <div class="menu-img">
+                <img src="assets/vectorphone.svg" alt="">
+                <img src="assets/gitphone.svg" alt="">
+                <img src="assets/linkdenphone.svg" alt="">
+            </div>
+        </ul>
+        <!-- only for phone-->
+        <button class="animated-button2">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+            </svg>
+            <span class="text">DOWNLOAD CV </span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+                </path>
+            </svg>
+        </button>
+        <img class="menu" src="assets/menu-line.svg" alt="">
+        <img class="close" src="assets/close-large-fill.svg" alt="">
+    </nav>
+    <section class="home-section" id="home">
+        <div class="part-one">
+            <div class="child-one">
+                <p class="hi">Hi, I am</p>
+                <div class="profile-name">
+                    <p class="miguel add ">Mohd Kamran</p>
+                    <p class="frontend cursor typewriter-animation add" id="typeText">Frontend Developer // UI Designer
+                    </p>
+                </div>
+                <div class="social-media">
+                    <div class="parent">
+                        <div class="vector"><img src="assets/Vector.svg" alt=""></div>
+                        <div class="git"><img src="assets/git.svg" alt=""></div>
+                        <div class="linkden"><img src="assets/linkden.svg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="child-two">
+                <div class="profile-res"></div>
+                <!-- PHONE PROFILE  -->
+                <img class="profile-img" src="assets/profile.svg" alt="">
+                <div class="profile-res2">
+                    <div class="profile-containt">
+                        <p class="para1">Hi, i am</p>
+                        <p class="para2">Mohd Kamran</p>
+                        <p class="para3 blink write">Frontend Developer / UI Designer</p>
+                    </div>
+                    <div class="profile-social-media">
+                        <img src="assets/vectorphone.svg" alt="">
+                        <img src="assets/gitphone.svg" alt="">
+                        <img class="linkden" src="assets/linkdenphone.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part-two">
+            <div class="back">
+                <div class="containt">
+                    <div class="child1"></div>
+                    <div class="child2">
+                        <div>
+                            <p class="it">ABOUT</p>
+                        </div>
+                        <div class="text-parent">
+                            <P class="text">Passionate and creative Web Designer with a strong foundation in HTML5,
+                                CSS3, and modern
+                                design principles. Recently completed hands-on projects focused on responsive layouts,
+                                attractive UI, and mobile-first design. Familiar with Bootstrap 5, basic JavaScript, and
+                                responsive frameworks. Quick learner, always ready to explore new tools, trends, and
+                                technologies. Dedicated to building clean, user-friendly websites with strong attention
+                                to detail.
+                                Able to understand client or project needs and turn ideas into fully functional web
+                                pages using
+                                semantic code. Strong interest in UI/UX design, animation, and improving user
+                                experience.
+                                Looking for an opportunity to grow, learn, and contribute creatively as a web designer
+                                in a
+                                dynamic and forward-thinking environment. Confident, motivated, and ready to begin a
+                                career
+                                in the world of web design with energy and commitment.
+
+                            </P>
+                        </div>
+                        <div class="read-parent">
+                            <P><span class="i1">I</span> Read More <span class="i2">I</span></P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!-- HOME SECTION CODE END HERE -->
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+    <div class="unique"></div><!--IGNORE THAT LINE OFF CODE-->
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!-- ABOUT SECTION START  HERE -->
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+    <section class="about-section" id="service">
+        <div class="forres1 ">
+            <div class="about-bor  animate-text">
+                <h1 class="for-border">SERVICE</h1>
+            </div>
+            <p class="about-para1 ">"From eye-catching design to flawless code, intuitive experiences to ongoing care —
+                I
+            </p>
+            <p class="about-para2"> don’t just build websites, I craft digital journeys that deliver results."</p>
+            <div class="about-explore animate-text2">
+                I Explore I
+            </div>
+            <div class="separate-parent ">
+                <img src="assets/separatorBlack 1-1.svg" alt="" class="separete1 animate-text2">
+            </div>
+        </div>
+        <div class="service-parent flex flex-col justify-around">
+            <div class="part1 flex align-center gap-10 w-full justify-center mb-100">
+                <div id="service1" class="animate-text flex flex-col gap-3">
+                    <h2 class="add"> DESIGN</h2>
+                    <img style="position: absolute;z-index: -1;" src="assets/design.svg" alt="">
+                    <div class="design-paras ">
+                        <p>"I design with clarity and creativity. Every pixel is crafted with purpose, blending visual
+                            harmony, </p>
+                        <p> branding, and usability into one seamless digital expression."</p>
+                    </div>
+                </div>
+                <div id="service2" class="animate-text development flex flex-col gap-5">
+                    <h2 class="add">DEVELOPMENT</h2>
+                    <img style="position: absolute;z-index: -1;" src="assets/development.svg" alt="">
+                    <div class="design-paras">
+                        <p>"I develop with precision and performance in mind. Every line of code brings design to life,
+                            making it </p>
+                        <p>interactive, and technically future-proof across all devices."</p>
+                    </div>
+                </div>
+            </div> <!-- part1 close -->
+            <div id="service3" class="part2 animate-text2 flex align-center gap-10 w-full justify-center">
+                <div class="flex flex-col gap-1">
+                    <h2 class="add">UI & UX</h2>
+                    <img style="position: absolute;z-index: -1;" src="assets/design.svg" alt="">
+                    <div class="design-paras">
+                        <p>"I shape interfaces with logic and emotion. Combining user psychology and modern trends, I
+                            create experiences </p>
+                        <p>that feel effortless, intuitive, and engaging at every touchpoint."</p>
+                    </div>
+                </div>
+                <div id="service4" class="development flex flex-col gap-5">
+                    <h2 class="add">MAINTENANCE</h2>
+                    <img style="position: absolute;z-index: -1;" src="assets/maintance.svg" alt="">
+                    <div class="design-paras">
+                        <p>"I maintain with consistency and care From performance tuning to real-time fixes, I ensure
+                            your website </p>
+                        <p>stays fast, secure — long after it's launched." </p>
+                    </div>
+                </div>
+            </div> <!-- part2 close -->
+            <div class="separate-parent">
+            </div>
+        </div> <!-- service-parent close -->
+    </section>
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!-- ABOUT SECTION END  HERE -->
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!-- SKILLS SECTION PART (1) START HERE-->
+
+    <section class="skill h-full w-full relative" id="skill">
+        <div class="container h-full w-full relative flex justify-center items-center">
+            <h1 class="add for-border">SKILLS</h1>
+            <div class="main-part">
+                <h2 class="using add">USING NOW:</h1>
+                    <div class="skill-part1 w-full flex">
+                        <div class="part1" id="part">
+                            <div class="html flex gap-5 flex-col" id="all-skill" style="align-items: center;"><img
+                                    src="assets/html.svg" alt="error"><span class="add-bg">HTML</span></div>
+                            <div class="flex gap-5 flex-col " id="all-skill" style="align-items: center;"><img
+                                    src="assets/css.svg" alt=""><span class="add-bg">CSS</span></div>
+                        </div>
+                        <div class="part2" id="part">
+                            <div class="flex gap-5 flex-col" id="all-skill" style="align-items: center;"> <img
+                                    src="assets/sass.svg" alt=""><span class="add-bg">SASS</span></div>
+                            <div class="JS flex gap-5 flex-col" id="all-skill" style="align-items: center;"> <img
+                                    src="assets/js.svg" alt=""><span class="add-bg">JS</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-part2 w-full flex justify-around">
+                        <div class="part3" id="part">
+                            <div class="html flex gap-5 flex-col" id="all-skill"
+                                style="align-items: center;background-size: cover;background-position: center;"><img
+                                    src="assets/jquery-horizontal.svg" alt="error"><span class="add-bg">JQUERY</span>
+                            </div>
+                            <div class="flex gap-5 flex-col" id="all-skill" style="align-items: center;"><img
+                                    src="assets/bootstrap.svg" alt=""><span class="add-bg">BOOTSTRAP</span></div>
+                        </div>
+                        <div class="part4" id="part">
+                            <div class="JS flex gap-5 flex-col justify-center" id="all-skill"
+                                style="align-items: center;justify-content: center;"><img
+                                    src="assets/gsap-greensock.svg" alt=""><span class="add-bg">GSAP</span></div>
+                            <div class="JS flex gap-5 flex-col" id="all-skill" style="align-items: center;"> <img
+                                    src="assets/figma.svg" alt=""><span class="add-bg">FIGMA</span></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!-- SKILLS SECTION PART (1) END -->
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!-- SKILLS SECTION PART (2) -->
+
+    <section class="skill2 h-full w-full">
+        <div class="container">
+            <div class="learninig">
+                <h2 class="add">LEARNING:</h2>
+                <div class="content">
+                    <div class="flex flex-col gap-5 justify-center items-center" id="all-skill2"> <img
+                            src="assets/nodejs.png" alt=""><span class="add-bg">NODE JS</span></div>
+                    <div class="flex flex-col gap-5 justify-center items-center" id="all-skill2"><img
+                            src="assets/mysql.svg" alt=""><span class="add-bg">MYSQL</span></div>
+                    <div class="flex flex-col gap-5 justify-center items-center" id="all-skill2"><img
+                            src="assets/mongodb.png" alt=""><span class="add-bg">MONGODB</span></div>
+                    <div class="flex flex-col gap-5 justify-center items-center" id="all-skill2"> <img
+                            src="assets/ts.png" alt=""><span class="add-bg">TYPESCRIPT</span></div>
+                    <div class="flex flex-col gap-5 justify-center items-center" id="all-skill2"><img
+                            src="assets/swiper-logo.svg" alt=""><span class="add-bg" style="white-space: nowrap;">SWIPER
+                            JS</span>
+                    </div>
+                    <div class="flex flex-col gap-5 justify-center items-center" id="all-skill2"> <img
+                            src="assets/gitt.svg" alt=""><span class="add-bg">GIT</span></div>
+                </div>
+            </div>
+            <div class="other-skill">
+                <h2 class="add">OTHER SKILL:</h2>
+                <div class="content2">
+                    <div class="flex flex-col gap-1 justify-center items-center" id="all-skill3"><img
+                            src="assets/tailwindcss-mark.d52e9897.svg" alt=""><span class="add-bg">TAILWIND CSS</span>
+                    </div>
+                    <div class="flex flex-col gap-1 justify-center items-center" id="all-skill3"><img
+                            src="assets/github-logo-svgrepo-com.svg" alt=""><span class="add-bg">GIT HUB</span></div>
+                    <div class="reactjs flex-col gap-5 justify-center items-center" id="all-skill3"
+                        style="text-align: center;"><img src="assets/react.svg" alt=""><span class="add-bg">REACT
+                            JS</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!-- SKILLS SECTION PART (2) END -->
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!--PORTFOLIO SECTION START HERE-->
+    <section class="portfolio add-bg h-full w-full relative" id="work">
+        <div class="img-div flex justify-center items-center">
+            <h2 class="add for-border absolute">PORTFOLIO</h2>
+        </div>
+        <div class="main">
+            <div class="slide flex flex-row justify-center items-center ">
+                <span>ALL</span>
+                <span>CODED</span>
+                <span>DESIGN</span>
+            </div>
+            <div class="projects">
+                <div class="all">
+                 <img src="assets/Project 1.png" alt="">
+                  <img src="assets/Project 2.png" alt="">
+                  <img src="assets/Project 1.png" alt="">
+                  <img src="assets/Project 3.png" alt="">
+                  <img src="assets/Project 2.png" alt="">
+                  <img
+                            src="https://images.unsplash.com/photo-1580813464570-f36c6aaa0859?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHdlYnNpdGV8ZW58MHwwfDB8fHww"
+                            alt="">
+                </div>
+                <div class="coded">
+                    <img src="assets/Project 3.png" alt="">
+                    <img src="assets/Project 2.png" alt="">
+                    <img src="assets/Project 1.png" alt="">
+                    <img src="https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYnNpdGV8ZW58MHwwfDB8fHww"
+                        alt="">
+                    <img src="assets/Project 2.png" alt="">
+                    <img src="assets/Project 3.png" alt="">
+                </div>
+                <div class="design">
+                    <img src="assets/Project 2.png" alt="">
+                    <img src="assets/Project 1.png" alt="">
+                    <img src="assets/Project 2.png" alt="">
+                    <img src="assets/Project 3.png" alt="">
+                    <img src="https://images.unsplash.com/photo-1580813464570-f36c6aaa0859?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHdlYnNpdGV8ZW58MHwwfDB8fHww"
+                        alt="">
+                </div>
+            </div>
+            <div class="many flex justify-center items-center">
+                and many more to come!
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!--PORTFOLIO SECTION (WORK) END HERE-->
+
+    <!----------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------->
+
+    <!--CONTACT SECTION START HERE-->
+    <section class="contact h-full w-full relative" id="contact">
+        <div class="contact-div flex justify-center items-center relative">
+            <h1 class="absolute add for-border">CONTACT</h1>
+        </div>
+        <div class="para-div flex  items-center flex-col">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut debitis vel est </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="seprate-img">
+            <img src="assets/separatorBlack 1-1.svg" alt="">
+        </div>
+        <div class="form-other-parent">
+
+            <form class="contact-form">
+                <input class="for-border add" type="text" id="name" name="name" placeholder="Enter Your Name*"
+                    pattern="[A-Za-z ]{6,}" required oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '')">
+                <input class="for-border" type="email" id="mail" name="email" placeholder="Enter Your Email*"
+                    pattern=".*@.*" required title="Email must contain @ symbol (e.g. tufan@example.com)">
+
+                <input class="for-border add" type="tel" id="number" name="number" placeholder="Enter Your Number*"
+                    pattern="[0-9]{10,}" required oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    maxlength="10">
+                <textarea class="for-border add" id="message" name="message" placeholder="Your Message*" cols="30"
+                    rows="10" required></textarea>
+                <button type="submit" id="msg" class="add">Send Message</button>
+                <p id="errorMsg" style="color: red; display: none;">Please enter a valid email containing '@'</p>
+            </form>
+            <div class="other-details">
+                <div class="mail flex gap-3"> <i class="ri-mail-send-fill add"></i><span><a class="add"
+                            href="mailto:mdkamran76178@gmail.com">mdkamran76178@gmail.com</a></span></div>
+                <div class="phone flex gap-3"><i class="ri-phone-fill add"></i><span><a class="add"
+                            href="tel:7617805303">7617805303</a></span></div>
+                <div class="location flex gap-3"><i class="ri-user-location-fill add"></i><span><a class="add"
+                            href="">domain-lucknow</a></span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer add-bg">
+        <a href="#home">
+            <div class="back-top ">
+                <img src="assets/top.svg" alt="">
+                <p>Back To Top</p>
+            </div>
+        </a>
+        <div class="footer-media">
+            <a href="https://www.facebook.com/"><img src="assets/fb-footer.svg" alt=""></a>
+            <a href=""><img src="assets/link-footer.svg" alt=""></a>
+            <a href=""><img src="assets/insta-footer.svg" alt=""></a>
+            <a href="mailto:mdkamran76178@gmail.com"><img src="assets/mail-footer.svg" alt=""></a>
+        </div>
+        <div class="copyright flex justify-center items-center gap-1">
+            <span>@2025 Mohd Kamran</span><span>All Rights Reserved.</span>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.emailjs.com/sdk/4.6.0/email.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            loop: false,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

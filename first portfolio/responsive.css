@@ -1,0 +1,434 @@
+/* 🔽 Mobile (Smartphones) */
+@media (max-width: 600px){
+  /* Ye sirf mobile portrait mode ke liye hoga */
+    /*    HOME SLIDER UP EFFECT text*/
+.words span{font-size: 1.3rem;}
+/*    HOME SLIDER UP EFFECT END*/
+  .unique{display: block; height: calc(100% - 50px);}
+  nav{position: static;}
+  nav .nav-list {position: absolute;top: 50px;left: 0;height: 100%;width: 100%;flex-direction: column;gap: 20px;overflow: hidden;max-height: 0;opacity: 0;visibility: hidden;transition: all 0.3s ease-in-out;}
+      nav .nav-list .nav-blur-bg {position: absolute;inset: 0;background-size: cover;background-position: center;background-color: #0000009e;backdrop-filter: blur(10px);z-index: -1;opacity: 0.9;overflow: hidden;}
+      nav ul .btn{position: relative;height: 50px;width: 100vw;border-radius: 0px;}
+      .nav-list .text1{display: flex;flex-direction: column;align-items: center;gap: 10px;}
+      .nav-list .text1 .diaz{font-size: clamp(1.5rem,1.8vw,2.5rem); }
+      .nav-list .text1 .diaz span{font-family: "Delius Unicase", cursive;}
+      .nav-list .text1 .web-designer{font-size: clamp(1.8rem,2vw,2rem);}
+      .nav-list .menu-img img{margin: 10px;cursor: pointer;}
+      .nav-list .seprate{display: block;}
+      .nav-list .menu-img{display: flex;flex-direction: row;}
+      nav .nav-list.show {max-height: calc(100vh - 40px); opacity: 1;visibility: visible;z-index: 999;}
+      nav .menu{display: block;margin: 0 20px;cursor: pointer;}
+      nav .close{margin: 0 20px;cursor: pointer;}
+      nav .menu,.close{opacity: 0;transform: translateY(-40px); animation: slideDown 0.5s ease-out forwards;animation-delay: 0.4s;}
+@keyframes slideDown { from {opacity: 0;transform: translateY(-20px);}to {opacity: 1;transform: translateY(0);}}
+      nav ul .home{margin: 30px 0 0 0;}
+      nav ul li{margin: 0px;}
+      nav .nav-list li a { color: #ffffffd9;z-index: 1;position: relative;margin: -5px;}
+      nav .animated-button2{display:flex;}
+      /* profile start here*/
+      .child-two img{height: 75%;width: 100%;  left: 0; transform: translateX(60px);}
+      .home-section .part-one .child-one {display: none;}
+      .home-section .part-one .child-two {height: 100%;width: 100vw;overflow: hidden;clip-path: none;position: relative;flex-direction: row;display: flex;}
+      .part-one{height:100%;}
+      .child-two .profile-res{display: block;width: 100%;height: 300px;background-color: rgba(255, 255, 255, 0.833);position: absolute;bottom: 0;left: 0;transform-origin: bottom left;clip-path: polygon(0 50%,100% 10%,100% 100%,0% 100% );  }
+      .child-two .profile-res2{display: flex;width: 100%;height: 300px;background-color: rgba(0, 0, 0, 0.461);position: absolute;   bottom: 0;left: 0;transform-origin: bottom left;clip-path: polygon(0 50%,100% 10%,100% 100%,0% 100%);z-index: 5; }
+      .child-two .profile-res2 .profile-containt{height:100%;width:75%;display:flex;flex-direction:column;justify-content:center;margin-top:60px;}
+      .child-two .profile-res2 .profile-containt p{margin: 1px 0 0 40px;}
+      .child-two .profile-res2 .profile-containt .para1{font-size: 1.8rem;}
+      .child-two .profile-res2 .profile-containt .para2{font-size: 1.7rem;color: #000;}
+      .child-two .profile-res2 .profile-containt .para3{font-size: 0.95rem;}
+      .child-two .profile-social-media{height: 100%;width: 25%;display: flex;flex-direction: column;justify-content: center;gap: 33px;}
+      .part-two{display: flex;height: 100%;width: 100%;}
+      .part-two .back .containt .child1{display: none;}
+      .part-two .back .containt .child2{display: flex; justify-content: space-around; align-items: center;}
+      .part-two .back .containt .child2 .text{ font-size: 1rem;}
+      .part-two .back .containt .child2 .text-parent{width: 80%;}
+      .child-two .profile-social-media img{height: 30px;width: 32px;position: relative;margin: 10px 0 0 -18px;top: 10px;cursor: pointer;animation: left  1s  ease-in-out ;}
+      .child-two .profile-social-media img:nth-child(1){animation-delay: 0.2s;}
+      .child-two .profile-social-media img:nth-child(2){animation-delay: 0.3s;}
+      .child-two .profile-social-media img:nth-child(3){animation-delay: 0.45s;}
+      @keyframes left {from{left: 180px;}to{left: 0px;}}
+      .child-two .profile-social-media .linkden{height: 32px;}
+      /* ABOUT SECTION START HERE*/
+      .about-section h1{margin-top: 20px;font-size: 1.3rem;padding: 4px 35px 4px 35px;}
+      .about-section .about-para1{margin-top: 30px;font-size: 2.7vw;}
+      .about-section .about-para2{font-size: 2.7vw;}
+      .about-section .separete1{width: 80px;}
+      .about-section .about-para1{margin-top: 30px;}
+      .about-section .about-explore{margin-top: 25px;}
+      .about-section .separete1{width: 100px;margin-top: 15px;}
+      .about-section .design,
+      .about-section .development,
+      .about-section .ui-ux,
+      .about-section .maintanance{height: 10%;width: 80%;gap: 5px;display: flex;flex-direction: column;}
+      .about-section .service-parent p{font-size: 0.86rem;}
+      .about-section .service-parent h2{font-size: 1.1rem;}
+      .about-section .part1,.part2{flex-direction: column;align-items: center;justify-content:space-evenly ;gap: 20px;}
+      .about-section .service-parent{height: calc(100% - 28%);justify-content: space-evenly;align-items: center;width: 100%;text-align: center;}
+      .about-section .forres1{height: 28%;}
+      .about-section .separete1{width: 100px;margin-top: 40px;}
+   
+      /* ABOUT SECTION END HERE*/
+
+      /* SKILL SECTION PART (1)START HERE*/
+      .skill h1{padding: 4px 35px 4px 35px;top: 5px;}
+      .skill .using{margin-left: 20px;}
+      .skill .main-part{width: 100%;}
+      .skill .main-part .skill-part1 img,
+      .skill .main-part .skill-part2 img{height: 65px;width: 65px;}
+      #part{display: flex; flex-direction: column;justify-content: space-around;}
+      .skill .main-part .skill-part2{margin-top: 0px;}
+      .main-part span {padding: 5px 15px;font-size: 0.94rem;}
+
+      /* SKILL SECTION PART (1) END HERE*/
+      /* SKILL SECTION PART (2)START HERE*/
+
+     .skill2 .container .content{grid-template-columns: repeat(2,1fr);gap: 50px;display: grid;}
+     .skill2 .container img{height: 68px;width: 68px;}
+     .skill2 .container .other-skill .content2{display: flex;flex-direction: row;width: 100%;gap: 60px;}
+
+     .skill2 .container .other-skill .content2 img{height: 68px;width: 68px;}
+.skill2 .container .learninig{height: 70%;width: 80%;}
+.skill2 .container .other-skill{height: 25%;width: 80%;}
+ .skill2 .container{gap: 20px;}
+.content2 span {padding: 5px 15px;font-size: 0.7rem;}
+.skill2 .content2 .reactjs{display: none;}
+/* SKILL SECTION PART (2)END HERE*/
+
+/* PORTFOLIO SECTION START HERE*/
+.portfolio .main .slide span{width: 20%;font-size: 0.8rem;}
+.portfolio h2{ padding: 5px 20px 5px 20px; border: 3px solid black;font-size: 1rem;transition: all 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);margin: 0;}
+.portfolio .main .projects .all{grid-template-columns: repeat(1,1fr);}
+.portfolio .main .projects .coded{grid-template-columns: repeat(1,1fr);}
+.portfolio .main .projects .design{grid-template-columns: repeat(1,1fr);}
+.portfolio .main .projects .all img:nth-child(1),
+.portfolio .main .projects .all img:nth-child(2),
+.portfolio .main .projects .all img:nth-child(3){display: none;}
+.portfolio .main .projects .coded img:nth-child(1),
+.portfolio .main .projects .coded img:nth-child(2),
+.portfolio .main .projects .coded img:nth-child(3){display: none;}
+.portfolio .main .projects .design img:nth-child(1),
+.portfolio .main .projects .design img:nth-child(2),
+.portfolio .main .projects .design img:nth-child(3){display: none;}
+.portfolio .main .projects{margin-top: 10px;}
+/* PORTFOLIO SECTION END HERE */
+
+/* CONTACT SECTION START HERE*/
+#contact .para-div p{font-size: 0.65rem;}
+#contact .para-div{height: 7%;}
+#contact .form-other-parent{flex-direction: column;}
+#contact .contact-form{width: 100%;height: 100%;}
+#contact .other-details{width: 100%;height: 10%;display: grid;grid-template-columns: repeat(2,1fr);place-items: center;}
+#contact .other-details span a{font-size: 0.9rem;}
+#contact .form-other-parent{height: 70%;}
+/*CONTACT SECTION END HERE*/
+
+/* FOOTER SECTION START HERE*/
+.footer{height: 25%;}
+
+     
+    }
+
+
+/* NORMAL DEVICES LANDSCAPE MODE*/
+@media (max-width: 932px) and (orientation: landscape) {
+  /* Jab phone rotate hota hai yani landscape mode pe */
+      /*    HOME SLIDER UP EFFECT text*/
+.words span{font-size: 2.3rem;}
+/*    HOME SLIDER UP EFFECT END*/
+  nav {height: 35px;}
+  nav .logo {font-size: 1rem;}
+  .animated-button{height: 30px;width: 120px;}
+  .animated-button .text{font-size: 0.6rem;}
+  /* HOME SECTION START HERE*/
+  .home-section {height: calc(100% - 35px);width: 100%;background-color: #000000;}
+
+  .part-two .back .containt .it{font-size: 1.1rem;}
+  .child-one .profile-name .miguel{font-size: 2.5rem; font-family: arial;}  
+  .child-one .frontend{font-size: 0.9rem;}
+  .child-one .hi{font-size: 1.3rem;}
+  .home-section .part-one .child-one{gap: 8px;}
+  .social-media .parent div{height: 30px;width: 30px;}
+  .social-media .parent div img{height: 26px;width: 26px;}
+  .social-media{position: relative;}
+  .social-media .parent{width: 100%;height: 50%;position: absolute;bottom: 35px;}
+  .part-two .back .containt .child2 div{margin: 5px;}
+  .part-two .back .containt .it{font-size: 0.9rem;}
+  .part-two .back .containt .child2 .read-parent p{font-size: 0.7rem;}
+  .part-two .back .containt .child2 .text{ font-size: clamp(6px, 1vw, 15px);}
+   nav ul li a {font-size: 0.9rem;}
+   nav ul .btn {height: 30px;width: 60px;font-size: 0.7rem;}
+  .child-one .hi{ margin: 0 18rem  0 0;}
+  .part-two .back .containt .child2 div{margin: 2.4px;}
+/* HOME SECTION END HERE*/
+
+/* ABOUT SECTION START HERE */
+.about-section h1{border: 3px solid rgb(0, 0, 0);padding: 2px 25px 2px 25px;font-size: 1.2rem;margin-top: 5px;}
+.about-section .about-para1,.about-para2{font-size: 0.6rem;font-weight: 500;}
+.about-section .about-para1{margin-top: 10px;}
+.about-section .about-explore{margin-top: 10px;font-size: 0.9rem;}
+.about-section .separete1{width: 70px;margin-top: 10px;}
+.about-section .service-parent h2{font-size: 1rem;}
+.about-section .service-parent p{color: #909090;font-size: 0.75rem;}
+.about-section .service-parent #service1,#service3{margin-left: 30px;}
+.about-section .service-parent #service4{margin-left: -30px;}
+/* SKILLS SECTION PART(1)START HERE */
+.skill h1{  padding: 2px 20px 2px 20px;border: 3.3px solid black;color: black;margin-top: 30px;font-weight: 500;letter-spacing: 1px;position: absolute; top: -4px;}
+.skill .main-part .skill-part1 img,
+.skill .main-part .skill-part2 img{height: 55px;width: 55px;}
+.main-part span {padding: 5px 15px;font-size: 0.7rem;}
+.skill .part1 div:nth-child(1),
+.skill .part1 div:nth-child(2),
+.skill .part2 div:nth-child(1),
+.skill .part2 div:nth-child(2),
+.skill .part3 div:nth-child(1),
+.skill .part3 div:nth-child(2),
+.skill .part4 div:nth-child(1),
+.skill .part4 div:nth-child(2){gap: 4.3px;}
+.skill-part1 .part1{gap: 5px;} 
+.skill-part1 .part2{gap: 5px;}  
+.skill-part2 .part3{gap: 5px;}
+.skill-part2 .part4{gap: 5px;}
+.skill .main-part .skill-part2{margin-top: 10px;}
+.skill .main-part .skill-part1{margin-top: -20px;}
+/* SKILLS SECTION PART(1)END HERE */
+
+/* SKILL SECTION PART (2)START HERE*/
+.skill2 .container h2{font-size: 1rem;}
+.skill2 .container img,.skill2 .other-skill .content2 img{height: 45px;width: 45px;}
+.content span,.content2 span {padding: 5px 10px;font-size: 0.6rem;}
+.skill2 .container .content{display: grid;grid-template-columns: repeat(3,1fr);gap: 5px;}
+.skill2 .container .content div{gap: 5px;}
+.skill2 .container .content div,.skill2 .other-skill .content2 div{margin: 10px 30px 0 0;}
+/* SKILL SECTION PART (2)END HERE*/
+
+/* PORTFOLIO SECTION START HERE*/
+.portfolio .main .slide span{width: 17%;font-size: 0.8rem;}
+.portfolio h2{ padding: 5px 20px 5px 20px; border: 3px solid black;font-size: 1rem;transition: all 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);margin: 0;}
+.portfolio .main .slide span{height: 250%;width: 10%;display: flex;justify-content: center;align-items: center;cursor: pointer;margin-top: 100px;}
+.img-div{height: 20%;}
+.portfolio .main .slide span{height: 120%;width: 10%;display: flex;justify-content: center;align-items: center;cursor: pointer;line-height: 0px;margin-top: 0px;}
+.portfolio .main .slide{height: 9%;width: 100%;background-color: #00f61500;}
+.portfolio .main .many{height: 11%;font-size: 0.8rem;}
+.portfolio .main .projects{margin-top: 6px;}
+/* PORTFOLIO SECTION END HERE */
+
+/* CONTACT SECTION START HERE*/
+#contact h1{padding: 5px 25px 5px 25px;border: 3px solid black;font-size: 1.2rem;letter-spacing: 2px;}
+.para-div p{font-size: 0.92rem;}
+#contact .para-div{height: 10%;}
+#contact .contact-form{width: 70%;height: 110%;display: grid;grid-template-columns: repeat(2,1fr);justify-items: center;align-content: center;}
+#msg { padding: 8px 15px 8px 15px;}
+#contact input[type="text"],input[type="email"],input[type="tel"],#contact #message{width: 95%;}
+#contact .other-details{width: 30%;}
+#contact .other-details span a{font-size: 0.8rem;}
+ 
+}
+
+    /* extra small devices (phones, 360px and down) */
+@media (max-width:376px) {
+      /*    HOME SLIDER UP EFFECT text*/
+.words span{font-size: 1rem;}
+.home-slider p{font-size: 0.9rem;}
+/*    HOME SLIDER UP EFFECT END*/
+  .child-two .profile-res2 .profile-containt .para2{font-size: 1.5rem;}
+  .child-two img{height: 100%;width: 100%;  left: 0; transform: translateX(0);}
+  .child-two .profile-social-media img{margin: 0 0 0 20px;}
+  .part-two .back .containt .child2 .text{ font-size: 0.65rem;}
+  /* ABOUT SECTION START HERE*/
+.about-section h1{margin-top: 20px;font-size: 1.2rem;padding: 5px 30px 5px 30px;}
+.about-section .about-para1,.about-para2{font-size: 0.5rem;}
+.about-section .about-para2{font-size: 0.5rem;}
+.about-section .service-parent p{font-size: 0.7rem;}
+.about-section .service-parent  h2{font-size: 0.9rem;}
+.about-section .separete1{margin-top: 20px;}
+/* SKILLS SECTION START HERE*/
+.skill h1{ padding: 2px 25px 2px 25px;font-size: 1rem;margin-top: 5px;}
+.skill .main-part .using{font-size: 1.15rem;margin-top: -30px;}
+.main-part span{font-size: 0.8rem;}
+.skill .main-part .skill-part2 img{height: 60px;width: 60px;}
+
+.skill .part1 div:nth-child(1),
+.skill .part1 div:nth-child(2),
+.skill .part2 div:nth-child(1),
+.skill .part2 div:nth-child(2),
+.skill .part3 div:nth-child(1),
+.skill .part3 div:nth-child(2),
+.skill .part4 div:nth-child(1),
+.skill .part4 div:nth-child(2){gap: 6px;}
+.skill .main-part .skill-part2{margin-top: -20px;}
+   /* SKILL SECTION PART (1) END HERE*/
+      /* SKILL SECTION PART (2)START HERE*/
+
+     .skill2 .container .content{display: grid; grid-template-columns: repeat(2,1fr);gap: 5px;   justify-content: space-around;align-content: space-around;height: 100%;}
+     .skill2 .container img{height: 60px;width: 60px;}
+     .skill2 .container .other-skill .content2 img{height: 55px;width: 55px;}
+     .skill2 .container .learninig{height: 65%;width: 70%;}
+     .skill2 .container .other-skill{height: 30%;width: 70%;}
+     .skill2 .container .content #all-skill2{gap: 5px;}
+     .skill2 .container .content span{padding: 5px 10px;font-size: 0.8rem;}
+.skill2 .container{display: flex;gap: 50px;}
+     .skill2 .container .other-skill .content2{display: flex;flex-direction: row;width: 100%;gap: 0px;}
+     /* SKILL SECTION PART (2)END HERE*/
+
+/* PORTFOLIO SECTION START HERE*/
+.portfolio .main .slide span{width: 17.5%;font-size: 0.7rem;}
+.portfolio h2{ padding: 5px 20px 5px 20px; border: 3px solid black;font-size: 1rem;transition: all 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);margin: 0;}
+/* PORTFOLIO SECTION END HERE */
+
+/* CONTACT SECTION START HERE*/
+#contact h1{padding: 5px 20px 5px 20px;border: 3px solid black;font-size: 1.2rem;letter-spacing: 2px;}
+
+
+
+}
+
+
+/* Ye tablets jab portrait mode me hon tab chalega */
+@media (min-width: 767px) and (max-width: 1024px) and (orientation:portrait) {/* tablet ke liye*/
+  /*    HOME SLIDER UP EFFECT*/
+
+.words span{font-size: 2.3rem;}
+
+/*    HOME SLIDER UP EFFECT END*/
+  /* nav respnsive*/
+  .home-section {height: calc(100% - 60px);}
+  nav{height: 60px;}
+  nav ul .btn {height: 50px;width: 100px;font-size: 1.3rem;}
+  nav .logo {font-size: 1.5rem;}
+  .nav-list a {font-size: 1.1rem;margin: 0px}
+
+  /* navbar responsive end*/
+
+  /* home section responsive*/
+.part-one {height: 60%;}
+.part-two{height: 40%;}
+.child-two img{height: 50vh;width: 50vw;}
+.child-one .hi{ font-size: clamp(3rem,3.5vw,7.8rem);margin:0;color: #000;}
+.child-one .frontend{font-size: clamp(2vw,2vw,3vw);}
+.home-section .part-one .child-one { clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);}
+.home-section .part-one .child-two { clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);}
+.part-two .back .containt .child2 div{margin: 10px;}
+.part-two .back .containt .it{font-size: clamp(2.3rem,3vw,4rem);}
+.part-two .back .containt .child2 .read-parent p{font-size: 2rem;}
+.part-two .back .containt .child2 .text{ font-size: 1rem}
+.social-media .parent div{height: 50px;width: 50px;margin-top: 150px;}
+.social-media .parent div img{height: 40px;width:45px;}
+.child-one .profile-name .miguel{font-size: 3.2rem;}
+
+/* ABOUT SECTION START HERE*/
+.about-section h1{margin-top: 90px;}
+.about-section .about-para1,.about-para2{font-size: 1.1rem;}
+.about-section .about-para1{margin-top: 30px;}
+.about-section .about-explore{margin-top:20px;font-size: 1.4rem;}
+.about-section .separete1{width: 120px;margin-top: 20px;}
+.about-section .service-parent h2{font-size: 1.4rem;}
+.about-section .service-parent p{font-size: 1.1rem;}
+.about-section #service1,#service2,#service3,#service4{padding: 30px;}
+/* ABOUT SECTION END HERE*/
+
+/* SKILL SECTION PART (1)START HERE*/
+.skill .main-part{width: 90%;}
+#part{display: flex; flex-direction: column;justify-content: space-around;}
+.skill .main-part .skill-part2{margin-top: 0px;}
+/* SKILL SECTION PART (1)END HERE*/
+
+/* SKILL SECTION PART (2)START HERE*/
+.skill2 .container .learninig{height: 65%;width: 75%;}
+.skill2 .container .other-skill{height: 20%;width: 75%;} 
+.skill2 .container .content{height: 100%; justify-content: space-around;align-content: space-around;grid-template-columns: repeat(2,1fr);}
+.skill2 .container{Gap: 60px;}
+/* SKILL SECTION PART (2)END HERE*/
+
+/* PORTFOLIO SECTION START HERE*/
+.portfolio .main .slide span{width: 13%;}
+.portfolio h2{ padding: 6px 25px 6px 25px; border: 3px solid black;font-size: 1.1rem;transition: all 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);}
+.portfolio .main .projects .all{grid-template-columns: repeat(2,1fr);}
+.portfolio .main .projects .coded{grid-template-columns: repeat(2,1fr);}
+.portfolio .main .projects .design{grid-template-columns: repeat(2,1fr);}
+/* PORTFOLIO SECTION END HERE*/
+
+/* CONTACT SECTION START HERE*/
+#contact .contact-div{height: 10%;}
+#contact h1{padding: 15px 50px 15px 50px;font-size: 1.5rem;}
+#contact .other-details span a{font-size: 1.1rem;}
+#contact .contact-form{width: 100%;}
+#contact input[type="text"],input[type="email"],input[type="tel"]{width: 85%;border-radius: 1px;}
+#contact #message{width: 85%;}
+#contact .form-other-parent{flex-direction: column;}
+#contact .other-details{width: 100%;height: 10%;flex-direction: row;justify-content: space-around;align-items: center;}
+/*CONTACT SECTION END HERE*/
+
+/* FOOTER SECTION START HERE*/
+.footer{height: 20%;}
+}
+
+/* small tablets above 600px*/
+@media(min-width:601px) and (max-width:767px){
+.child-one .hi{ font-size: 1.8rem;margin: 0;}
+nav ul li a {margin: 0 10px;}
+.child-one .profile-name .miguel{font-size: 2rem;}  
+.child-two img{height: 60vh;width: 28vw;}
+.child-one .frontend{font-size: 0.8rem;}
+
+/* ABOUT SECTION START HERE*/
+.about-section h1{margin-top: 20px;}
+.about-section .about-para1{margin-top: 30px;}
+.about-section .about-explore{margin-top: 25px;}
+.about-section #service1,#service2,#service3,#service4{padding: 30px;}
+/* ABOUT SECTION END HERE*/
+
+/* SKILL SECTION START HERE*/
+.skill .main-part{width: 90%;}
+.skill .main-part .skill-part1 img,
+.skill .main-part .skill-part2 img{height: 75px;width: 75px;}
+/* SKILL SECTION PART (2)END HERE*/
+
+/* PORTFOLIO SECTION START HERE*/
+.portfolio .main .slide span{width: 15%;}
+.portfolio h2{ padding: 6px 25px 6px 25px; border: 3px solid black;font-size: 1.2rem;transition: all 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);}
+/* PORTFOLIO SECTION END HERE */
+
+/* CONTACT SECTION START HERE*/
+#contact .contact-form{width: 100%;}
+#contact .para-div {height: 10%;}
+#contact .para-div p{font-size: 0.89rem;}
+#contact .form-other-parent{flex-direction: column;}
+#contact .other-details{width: 100%;height: 10%;flex-direction: row;justify-content: space-around;align-items: center;}
+#contact .other-details span a{font-size: 0.95rem;}
+}
+
+/* LARGE TABLETS YA LAPTOP KE LIYE > 1023PX*/
+
+@media (min-width:1023px) and (max-height:1367px){
+  .nav-list a {font-size: 1.3rem;margin: 10px;}
+
+  .skill-part1 .part1{gap: 40px;} 
+  .skill-part1 .part2{gap: 40px;}  
+
+  .skill-part2 .part3{gap: 40px;}
+  .skill-part2 .part4{gap: 40px;}
+
+  .skill .main-part .skill-part1 img,
+  .skill .main-part .skill-part2 img{height: 100px;width: 100px;}
+
+}
+
+@media (min-width:1023px) and (orientation: landscape){
+  .nav-list a {font-size: 1rem;font-weight: 549;}
+  .skill .main-part .skill-part1 img,
+  .skill .main-part .skill-part2 img{height: 90px;width: 90px;}
+.skill .main-part .using{font-size: 1.5rem;margin: 16px;font-weight: 660;  font-family: monospace;}
+
+
+
+  
+}
+
+
+
+
+
+  
+ 
+  
